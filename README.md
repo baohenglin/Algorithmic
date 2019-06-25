@@ -25,7 +25,7 @@
 
 It mainly records the learning process of common algorithms. The purpose of learning algorithms is to master important data structures and algorithms to improve the efficiency and quality of programming.(主要记录常见算法的学习过程，学习算法的目的是为了熟练掌握重要的数据结构和算法，以提高编程效率和质量。)
 
-## *📖Algorithmic Learning*
+## *💎 Algorithmic Learning*
 |Theme|Articles|Remarks|
 |:--|:--|:--:
 |Algorithmic Book|[《算法导论 Thomas著》](https://book.douban.com/subject/20432061/)<br>[《算法》](https://book.douban.com/subject/10432347/)<br>[《剑指offer》](https://book.douban.com/subject/27008702/)<br>[《数据结构与算法分析：C语言描述》](https://book.douban.com/subject/1139426/)<br>[《图解算法》](https://book.douban.com/subject/27620425/)<br>|
@@ -33,7 +33,7 @@ It mainly records the learning process of common algorithms. The purpose of lear
 
 
 
-## *📖LeetCode Algorithmic*
+## *📖 LeetCode Algorithmic*
 
 |Index|Title|Difficulty|
 |:--:|:--|:--:|
