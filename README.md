@@ -23,15 +23,21 @@
 <i<!--mg src="https://img.shields.io/badge/PR-welcome%20!-brightgreen.svg?colorA=a0cd34-->">
 </p>
 
-
-## *📖Algorithmic Learning*
-
 It mainly records the learning process of common algorithms. The purpose of learning algorithms is to master important data structures and algorithms to improve the efficiency and quality of programming.(主要记录常见算法的学习过程，学习算法的目的是为了熟练掌握重要的数据结构和算法，以提高编程效率和质量。)
 
+## *📖Algorithmic Learning*
 |Theme|Articles|Remarks|
 |:--|:--|:--:
 |Algorithmic Book|[《算法导论 Thomas著》](https://book.douban.com/subject/20432061/)<br>[《算法》](https://book.douban.com/subject/10432347/)<br>[《剑指offer》](https://book.douban.com/subject/27008702/)<br>[《数据结构与算法分析：C语言描述》](https://book.douban.com/subject/1139426/)<br>[《图解算法》](https://book.douban.com/subject/27620425/)<br>|
 |Important Algorithmic Links|[**LeetCode官网**](https://leetcode.com/problemset/algorithms/)<br>[**haoel/LeetCode**](https://github.com/haoel/leetcode)<br>[**LeetCode All in One 题目讲解汇总**](https://www.cnblogs.com/grandyang/p/4606334.html)<br>[LeetCode&《剑指offer》算法实现](https://github.com/knightsj/awesome-algorithm-question-solution)<br>[牛客网《剑指offer》刷题链接](https://www.nowcoder.com/ta/coding-interviews)<br>[麻省理工学院公开课：算法导论](http://open.163.com/special/opencourse/algorithms.html)<br>[LeetCode Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-medium/)<br>|
-Algorithmic Topics|[《LeetCode_2(Medium)：Add Two Numbers》](https://github.com/baohenglin/Algorithmic/blob/master/Articles/LeetCode_2：Add%20Two%20Numbers)<br>[《LeetCode_1(Easy)：Two Sum》](https://github.com/baohenglin/ARTS/blob/master/Articles/Algorithmic%201.md)<br>|
+
+
+
+## *📖LeetCode Algorithmic*
+
+|Index|Title|Difficulty|
+|:--:|:--|:--:|
+2|[Add Two Numbers](https://github.com/baohenglin/Algorithmic/blob/master/Articles/LeetCode_2：Add%20Two%20Numbers)<br>| Medium
+1|[Two Sum](https://github.com/baohenglin/ARTS/blob/master/Articles/Algorithmic%201.md)<br>| Easy
 
 
