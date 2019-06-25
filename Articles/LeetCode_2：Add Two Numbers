@@ -9,9 +9,9 @@ Example:
     Output: 7 -> 0 -> 8
     Explanation: 342 + 465 = 807.
     
-**C++解法：**
+    
+C++解法：
 
-```
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
@@ -31,12 +31,10 @@ public:
         return dummy->next;
     }
 };
-```
 
 
-**Java解法：**
+Java解法：
 
-```
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(-1);
@@ -56,5 +54,4 @@ class Solution {
         return dummy.next;
     }
 }
-```
 
