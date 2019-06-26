@@ -37,6 +37,7 @@ It mainly records the learning process of common algorithms. The purpose of lear
 
 |Index|Title|Difficulty|
 |:--:|:--|:--:|
+3|[Longest Substring Without Repeating Characters](https://github.com/baohenglin/Algorithmic/blob/master/Articles/Longest%20Substring%20Without%20Repeating%20Characters)|Medium
 2|[Add Two Numbers](https://github.com/baohenglin/Algorithmic/blob/master/Articles/LeetCode_2：Add%20Two%20Numbers)<br>| Medium
 1|[Two Sum](https://github.com/baohenglin/ARTS/blob/master/Articles/Algorithmic%201.md)<br>| Easy
 
