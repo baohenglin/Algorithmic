@@ -21,7 +21,7 @@ Explanation: The answer is "wke", with the length of 3.
              
 审题：给定一个字符串，要求求最长的无重复字符的子串(子串：必须是连续的)。             
 
-C++解法1：通过一个HashMap，建立每个字符和其最后出现位置之间的映射，然后定义两个变量res和left，其中res用来记录最长无重复子串的长度，left指向该无重复
+C++解法1：HashMap法。通过一个HashMap，建立每个字符和其最后出现位置之间的映射，然后定义两个变量res和left，其中res用来记录最长无重复子串的长度，left指向该无重复
         子串左边的起始位置的前一个，由于是前一个，所以初始化-1，然后遍历整个字符串，对于每一个遍历的字符，如果该字符已经在HashMap中存在了，并且如果其
         映射值大于left的话，那么将left的值更新为当前映射值。然后映射值更新为当前坐标i，这样就保证了left始终为当前边界的前一个位置，然后计算无重复子串
         的长度，直接用i-left即可。
@@ -31,12 +31,12 @@ public:
     int lengthOfLongestSubstring(string s) {
         int res = 0, left = -1, n = s.size();
         unordered_map<int, int> m;
-        //a b c a b c d a
-        //0,1,2,3,4,5,6,7
+        //s=a b c a b c d a
+        //i=0,1,2,3,4,5,6,7
         for (int i = 0; i < n; ++i) {
             if (m.count(s[i]) && m[s[i]] > left) {
-                //     3,     4,     5,     7
-                //left=0,left=1,left=2,left=3,
+                //   i=0,   i=1,   i=2,   i=3,   i=4,   i=5,   i=6,   i=7,
+                //left=0,left=1,left=2,left=0,left=1,left=2,left=2,left=3,
                 left = m[s[i]];  
             }
             //m[a]=0,m[b]=1,m[c]=2,m[a]=3,m[b]=4,m[c]=5,m[d]=6,m[a]=7,
@@ -52,7 +52,6 @@ public:
 C++解法2：利用一个256位大小的整型数组来替代HashMap，因为ASCII表能表示256个字符，但是由于键盘只能表示128个字符，所以用128也行，然后全部初始化为-1，
          这样的好处是我们不用像之前的HashMap那样要查找当前字符是否存在映射对了，对于每一个遍历到的字符，我们直接用其在数组中的值来更新left，因为默认
          是-1，而left初始化也是-1，所以并不会产生错误，这样就省去了if判断。
-
 
 
 class Solution {
