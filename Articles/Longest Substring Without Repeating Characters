@@ -26,7 +26,6 @@ C++解法1：HashMap法。通过一个HashMap，建立每个字符和其最后�
         映射值大于left的话，那么将left的值更新为当前映射值。然后映射值更新为当前坐标i，这样就保证了left始终为当前边界的前一个位置，然后计算无重复子串
         的长度，直接用i-left即可。
 
-```
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -49,7 +48,6 @@ public:
         return res;
     }
 };
-```
 
 C++解法2：利用一个256位大小的整型数组来替代HashMap，因为ASCII表能表示256个字符，但是由于键盘只能表示128个字符，所以用128也行，然后全部初始化为-1，
          这样的好处是我们不用像之前的HashMap那样要查找当前字符是否存在映射对了，对于每一个遍历到的字符，我们直接用其在数组中的值来更新left，因为默认
