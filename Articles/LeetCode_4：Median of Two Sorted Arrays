@@ -13,3 +13,7 @@ You may assume nums1 and nums2 cannot be both empty.
     nums1 = [1, 2]
     nums2 = [3, 4]
   The median is (2 + 3)/2 = 2.5
+  
+  ##中位数定义
+  
+  中位数的定义：如果某个有序数组长度是奇数，那么其中位数就是最中间那个，如果是偶数，那么就是最中间两个数字的平均值。
