@@ -15,7 +15,7 @@
 输出: "bb"
 ```
 
-## 解法1：中心扩展算法 （C++）
+### 解法1：中心扩展算法 （C++）
 
 ```
 class Solution {
@@ -50,3 +50,32 @@ public:
 
 * 时间复杂度： O(n^2)，由于围绕中心来扩展回文会耗去 O(n) 的时间，所以总的复杂度为 O(n^2)。
 * 空间复杂度：O(1)。
+
+
+### 解法二：动态规划(Dynamic Programming)算法
+
+**解题思路：**维护一个二维数组 dp，其中 dp[i][j] 表示字符串区间 [i, j] 是否为回文串，当 i = j 时，只有一个字符，肯定是回文串，如果 i = j + 1，说明是相邻字符，此时需要判断 s[i] 是否等于 s[j]，如果i和j不相邻，即 i - j >= 2 时，除了判断 s[i] 和 s[j] 相等之外，dp[j + 1][i - 1] 若为真，就是回文串。
+
+```
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        if (s.empty()) return "";
+        int n = s.size(), dp[n][n] = {0}, left = 0, len = 1;
+        for (int i = 0; i < n; ++i) {
+            dp[i][i] = 1;
+            for (int j = 0; j < i; ++j) {
+                dp[j][i] = (s[i] == s[j] && (i - j < 2 || dp[j + 1][i - 1]));
+                // dp[j][i]=1时，即字符串区间 [j, i]是回文字符串时，更新 left 和 len变量。
+                if (dp[j][i] && len < i - j + 1) {
+                    len = i - j + 1;
+                    left = j;
+                }
+            }
+        }
+        return s.substr(left, len);
+    }
+};
+```
+
+
