@@ -15,7 +15,7 @@
 输出: "bb"
 ```
 
-### 解法1：中心扩展算法 （C++）
+### 解法1：中心扩展算法
 
 **性能指标数据**：执行用时 8 ms，消耗内存 8.7M。
 
@@ -26,6 +26,8 @@
 
 
 ```
+// C++ 代码如下：
+
 class Solution {
 public:
     string longestPalindrome(string s) {
@@ -70,6 +72,8 @@ public:
 
 
 ```
+// C++ 代码如下：
+
 class Solution {
 public:
     string longestPalindrome(string s) {
@@ -101,6 +105,8 @@ public:
 * 空间复杂度：
 
 ```
+// C++ 代码如下：
+
 class Solution {
 public:
     string longestPalindrome(string s) {
