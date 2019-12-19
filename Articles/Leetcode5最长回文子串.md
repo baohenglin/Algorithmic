@@ -60,7 +60,12 @@ public:
 
 **性能指标数据**：执行用时 200 ms，消耗内存 13.1 M。
 
-**解题思路：**维护一个二维数组 dp，其中 dp[i][j] 表示字符串区间 [i, j] 是否为回文串，当 i = j 时，只有一个字符，肯定是回文串，如果 i = j + 1，说明是相邻字符，此时需要判断 s[i] 是否等于 s[j]，如果i和j不相邻，即 i - j >= 2 时，除了判断 s[i] 和 s[j] 相等之外，dp[j + 1][i - 1] 若为真，就是回文串。
+**复杂度分析：**
+
+* 时间复杂度： O(n^2)。
+* 空间复杂度：O(n^2)，该方法使用 O(n^2) 的空间来存储表。
+
+**解题思路**：维护一个二维数组 dp，其中 dp[i][j] 表示字符串区间 [i, j] 是否为回文串，当 i = j 时，只有一个字符，肯定是回文串，如果 i = j + 1，说明是相邻字符，此时需要判断 s[i] 是否等于 s[j]，如果i和j不相邻，即 i - j >= 2 时，除了判断 s[i] 和 s[j] 相等之外，dp[j + 1][i - 1] 若为真，就是回文串。
 
 
 
@@ -80,10 +85,48 @@ public:
                     left = j;
                 }
             }
-        }
+        } 
         return s.substr(left, len);
     }
 };
 ```
+
+### 解法三：Manacher's Algorithm（马拉车算法）
+
+**性能指标数据**：执行用时 16 ms，消耗内存 9.2 M。
+
+**复杂度分析：**
+
+* 时间复杂度： O(n)。
+* 空间复杂度：
+
+```
+class Solution {
+public:
+    string longestPalindrome(string s) {
+        string t ="$#";
+        for (int i = 0; i < s.size(); ++i) {
+            t += s[i];
+            t += '#';
+        }
+        int p[t.size()] = {0}, id = 0, mx = 0, resId = 0, resMx = 0;
+        for (int i = 1; i < t.size(); ++i) {
+            p[i] = mx > i ? min(p[2 * id - i], mx - i) : 1;
+            while (t[i + p[i]] == t[i - p[i]]) ++p[i];
+            if (mx < i + p[i]) {
+                mx = i + p[i];
+                id = i;
+            }
+            if (resMx < p[i]) {
+                resMx = p[i];
+                resId = i;
+            }
+        }
+        return s.substr((resId - resMx) / 2, resMx - 1);
+    }
+};
+```
+
+
 
 
