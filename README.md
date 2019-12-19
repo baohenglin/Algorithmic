@@ -25,7 +25,7 @@
 
 It mainly records the learning process of common algorithms. The purpose of learning algorithms is to master important data structures and algorithms to improve the efficiency and quality of programming.(主要记录常见算法的学习过程，学习算法的目的是为了熟练掌握重要的数据结构和算法，以提高编程效率和质量。)
 
-In addition, algorithms are the basic knowledge for first-class Internet companies to interview, which is very important.(此外算法是一流互联网企业面试必考基础知识，相当重要。)
+In addition, algorithms are the basic knowledge for first-class Internet companies to interview, which is very important.(此外，算法是一流互联网企业面试必考基础知识，相当重要。)
 
 ## *📖 Algorithmic Learning*
 |Theme|Articles|Remarks|
