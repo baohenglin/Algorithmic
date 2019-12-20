@@ -101,7 +101,7 @@ public:
 
 **复杂度分析：**
 
-* 时间复杂度： O(n)。
+* 时间复杂度： O(n)。Manacher算法的最大贡献是在于将时间复杂度提升到了线性，这是非常了不起的。
 * 空间复杂度：
 
 [解题思路](https://www.cnblogs.com/grandyang/p/4475985.html)
