@@ -39,7 +39,7 @@ In addition, algorithms are the basic knowledge for first-class Internet compani
 
 |Index|Title|Difficulty|
 |:--:|:--|:--:|
-8|[字符串转换整数]()|Medium
+8|[字符串转换整数](https://github.com/baohenglin/Algorithmic/blob/master/Articles/LeetCode8%EF%BC%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BD%AC%E6%8D%A2%E4%B8%BA%E6%95%B4%E6%95%B0.md)|Medium
 5|[最长回文子串](https://github.com/baohenglin/Algorithmic/blob/master/Articles/Leetcode5%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)|Medium
 4|[Median of Two Sorted Arrays](https://github.com/baohenglin/Algorithmic/blob/master/Articles/LeetCode_4：Median%20of%20Two%20Sorted%20Arrays)|Hard
 3|[Longest Substring Without Repeating Characters](https://github.com/baohenglin/Algorithmic/blob/master/Articles/Longest%20Substring%20Without%20Repeating%20Characters)|Medium
