@@ -95,7 +95,7 @@ public:
 };
 ```
 
-### 解法三：Manacher's Algorithm（马拉车算法） **最优解**
+### 解法三：Manacher's Algorithm（马拉车算法） ————**最优解**
 
 **性能指标数据**：执行用时 16 ms，消耗内存 9.2 M。
 
