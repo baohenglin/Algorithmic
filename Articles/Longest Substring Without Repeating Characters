@@ -7,25 +7,32 @@ Example 1:
     Input: "abcabcbb"
     Output: 3 
     Explanation: The answer is "abc", with the length of 3. 
-    Example 2:
+    
+    
+Example 2:
 
     Input: "bbbbb"
     Output: 1
     Explanation: The answer is "b", with the length of 1.
-    Example 3:
+
+Example 3:
 
     Input: "pwwkew"
     Output: 3
-Explanation: The answer is "wke", with the length of 3. 
-             Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
+    Explanation: The answer is "wke", with the length of 3. 
+
+Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
              
 审题：给定一个字符串，要求求最长的无重复字符的子串(子串：必须是连续的)。             
 
-C++解法1：HashMap法。通过一个HashMap，建立每个字符和其最后出现位置之间的映射，然后定义两个变量res和left，其中res用来记录最长无重复子串的长度，left指向该无重复
+C++解法1：HashMap法。
+
+解题思路：通过一个HashMap，建立每个字符和其最后出现位置之间的映射，然后定义两个变量res和left，其中res用来记录最长无重复子串的长度，left指向该无重复
         子串左边的起始位置的前一个，由于是前一个，所以初始化-1，然后遍历整个字符串，对于每一个遍历的字符，如果该字符已经在HashMap中存在了，并且如果其
         映射值大于left的话，那么将left的值更新为当前映射值。然后映射值更新为当前坐标i，这样就保证了left始终为当前边界的前一个位置，然后计算无重复子串
         的长度，直接用i-left即可。
 
+```
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -48,6 +55,7 @@ public:
         return res;
     }
 };
+```
 
 C++解法2：利用一个256位大小的整型数组来替代HashMap，因为ASCII表能表示256个字符，但是由于键盘只能表示128个字符，所以用128也行，然后全部初始化为-1，
          这样的好处是我们不用像之前的HashMap那样要查找当前字符是否存在映射对了，对于每一个遍历到的字符，我们直接用其在数组中的值来更新left，因为默认
