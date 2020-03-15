@@ -30,7 +30,7 @@ In addition, algorithms are the basic knowledge for first-class Internet compani
 ## *📖 Algorithmic Learning*
 |Theme|Articles|Remarks|
 |:--|:--|:--:
-|Algorithmic Book|[《算法导论 Thomas著》](https://book.douban.com/subject/20432061/)<br>[《算法》](https://book.douban.com/subject/10432347/)<br>[《剑指offer》](https://book.douban.com/subject/27008702/)<br>[《数据结构与算法分析：C语言描述》](https://book.douban.com/subject/1139426/)<br>[《算法图解》](https://book.douban.com/subject/26979890/)<br>|
+|Algorithmic Book|[《算法导论 Thomas著》](https://book.douban.com/subject/20432061/)<br>[《算法》Robert Sedgewick/Kevin Wayne著 谢路云 译]()<br>[《剑指offer》](https://book.douban.com/subject/27008702/)<br>[《数据结构与算法分析：C语言描述》](https://book.douban.com/subject/1139426/)<br>[《算法图解》](https://book.douban.com/subject/26979890/)<br>|
 |Important Algorithmic Links|[**LeetCode官网**](https://leetcode.com/problemset/algorithms/)<br>[**haoel/LeetCode**](https://github.com/haoel/leetcode)<br>[**LeetCode All in One 题目讲解汇总**](https://www.cnblogs.com/grandyang/p/4606334.html)<br>[LeetCode&《剑指offer》算法实现](https://github.com/knightsj/awesome-algorithm-question-solution)<br>[牛客网《剑指offer》刷题链接](https://www.nowcoder.com/ta/coding-interviews)<br>[麻省理工学院公开课：算法导论](http://open.163.com/special/opencourse/algorithms.html)<br>[LeetCode Top Interview Questions](https://leetcode.com/explore/interview/card/top-interview-questions-medium/)<br>|
 
 
